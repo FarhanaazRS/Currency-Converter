@@ -1,72 +1,63 @@
-# Currency Converter 🌍💱
+# 🌍💱 Currency Converter
 
-A simple and elegant currency converter web application that lets users convert amounts from one currency to another using real-time exchange rates from the [Currency API](https://github.com/fawazahmed0/currency-api).
-The application also displays country flags based on the selected currencies.
-
----
-
-
-## 🔧 Features
-
-- Real-time currency conversion using an open-source API.
-- Supports multiple currencies globally.
-- Automatically sets USD to INR as default for convenience.
-- Displays national flags for selected currencies using FlagsAPI.
-- Clean and responsive UI with Font Awesome icons.
+A sleek and user-friendly currency converter web application that enables users to convert between different currencies using up-to-date exchange rates. It also enhances the user experience by displaying relevant country flags based on selected currencies.
 
 ---
 
-## 💻 Tech Used
+## 🔧 Key Features
 
-- **HTML5** – for page structure  
-- **CSS3** – for styling and responsive layout  
-- **JavaScript (Vanilla JS)** – for API interaction and dynamic behavior  
-- **Fawaz Ahmed Currency API** – for real-time exchange rates  
-- **FlagsAPI** – to fetch country flags  
-- **Font Awesome** – for UI icons
+- Fetches real-time currency exchange rates via an open-source API.
+- Supports a wide range of global currencies.
+- Pre-selects USD to INR as the default conversion.
+- Displays flags corresponding to selected currencies using FlagsAPI.
+- Clean and fully responsive design using Font Awesome icons.
 
 ---
 
-## 📁 Project Structure
+## 💻 Technologies Used
+
+- **HTML5** – Structuring the web page  
+- **CSS3** – Styling and responsive design  
+- **JavaScript (Vanilla)** – API handling and DOM manipulation  
+- **FlagsAPI** – For displaying national flags  
+- **Font Awesome** – UI icons for a modern look
+
+---
+
+## 📁 Project Directory Structure
+
 ```
 Currency-Converter/
 │
-├── index.html # Main HTML structure
-├── style.css # Styling for the app
-├── app.js # JS logic to fetch and display currency rates
-├── codes.js # Stores country-code mapping for flags
-├── Assets/ # Image used in the project
-
+├── index.html       # Main HTML layout
+├── style.css        # App styling and responsiveness
+├── app.js           # Handles API calls and logic
+├── codes.js         # Country code mappings for flags
+├── Assets/          # Images and assets used
 ```
-## 🚀 How to Use
-
-1. Clone or download this repository.
-2. Make sure you have internet access (to load external APIs and fonts).
-3. Open `index.html` in any modern web browser.
-4. Enter the amount to convert.
-5. Choose the source ("From") and target ("To") currencies.
-6. Click **Get Exchange Rate**.
 
 ---
 
-## 🔗 API Used
+## 🚀 Getting Started
 
-- [Fawaz Ahmed Currency API (via jsDelivr CDN)](https://github.com/fawazahmed0/currency-api)
-  - Endpoint example: `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd/inr.json`
-- [Flags API](https://flagsapi.com/)
-  - Used for displaying country flags next to currency selectors.
-
----
-
-## 📸 Screenshots
-
-<img width="960" alt="image" src="https://github.com/user-attachments/assets/1bb41f34-0e4f-4cae-8e5a-d3f064aa9e20" />
+1. Download or clone the repository.
+2. Ensure your internet connection is active (required for APIs and fonts).
+3. Open `index.html` in any web browser.
+4. Enter an amount, choose currencies, and click **Get Exchange Rate**.
 
 ---
 
-## 📌 Notes
-
-- If you see a `404 Not Found` error for the currency API, ensure the URL structure is correct and the currencies exist in the dataset.
-- If flags are not displaying, double-check the `countryList` mapping and the URL format used with FlagsAPI.
+## 🔗 APIs Used
 
 
+
+- [Flags API](https://flagsapi.com/)  
+  Used to show national flags for each selected currency.
+
+
+---
+
+## 📌 Additional Notes
+
+- If a `404 Not Found` error occurs, verify the currency codes and API URL format.
+- If flags fail to load, ensure the country codes are mapped correctly in `codes.js` and match the FlagsAPI URL requirements.
